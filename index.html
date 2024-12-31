@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypeScript Simplest</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      h1 {
+        background-color: #e464c1;
+        color: #fff;
+        margin: 0;
+        padding: 20px 0;
+      }
+
+      .book-list {
+        text-align: left;
+        margin-left: 24px;
+      }
+
+      li {
+        width: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Books List</h1>
+
+    <div>
+      <h3>Add a Book</h3>
+      <input type="text" id="title" placeholder="Enter book title" />
+      <input type="text" id="author" placeholder="Enter author name" />
+      <button id="addBook">Add Book</button>
+    </div>
+
+    <div>
+      <h3>Delete a Book</h3>
+      <input
+        type="text"
+        id="deleteTitle"
+        placeholder="Enter book title to delete"
+      />
+      <button id="deleteBook">Delete Book</button>
+    </div>
+
+    <div>
+      <h3 class="book-list">Book List</h3>
+      <ol id="bookList">
+        <!-- Book list will be displayed here -->
+      </ol>
+    </div>
+
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
